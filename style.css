@@ -164,7 +164,7 @@
             display: none;
         }
         #sidebar_nav_mainbox{
-            width: 50%;
+            width: 100%;
             height: 100%;
             background-color: gray;
             box-shadow: 5px 0px 15px rgb(0, 0, 0);
@@ -190,19 +190,32 @@
             height: 100%;
             box-shadow: 5px 0px 15px rgb(0, 0, 0);
             display: flex;
+            transition: 200ms ease-in-out all;
+        }
+        .sidebar_nav_off{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transform: translateX(-51%);
+            transition: 200ms ease-in-out all;
         }
         .sidebar{
             display: flex;
         }
+        
         #menu_extend{
-            height: 100px;
+            height: auto;
+            width: 100%;
+        }
+        #menu_extend div{
             margin: 18px;
             display: inline-block;
             justify-content: center;
             text-align: center;
             transition: 300ms ease-in-out all;
         }
-        #menu_extend:hover{
+        #menu_extend div:hover{
             transform: scale(1.1);
         }
         #menu_extend p{

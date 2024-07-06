@@ -3,19 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>프로젝트 아포칼립스</title>
+    <title>좀보이드 아포칼립스</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="resource/zomboidIcon128.png"/>
+    <link rel="apple-touch-icon" href="resource/zomboidIcon128.png"/>
+
 </head>
 <body>
-    <section id="main_banner">
+    <section id="main_banner" id="for_PC">
         <img src="resource/logoProjectZomboid.png" alt="좀보이드 로고" id="main_LOGO"></img>
-        <p>프로젝트_아포칼립스</p>
-        <img src="resource/logoProjectZomboid.png" alt="공백" id="blank_LOGO"></img>
+        <div><p>좀보이드_</p><p>아포칼립스</p></div>
     </section>
-    <section class="navbar">
+
+    <section class="sidebar_nav" id="for_Mobile">
+        <div id="sidebar_nav_mainbox">
+            <!--for Mobile-->
+            <div id="sidebar_banner">
+                <img src="resource/logoProjectZomboid.png" alt="좀보이드 로고"></img>
+            </div>
+            <div class="sidebar">
+                <div class="side_bar_box">
+                    <ul>
+                        <li><img src="resource/ClockDigitsLarge1.png">
+                            <div class="showbox_side">
+                                <ol class="showbox_side_menu">
+                                    <li><a href="#">간단 소개</a></li>
+                                    <li><a href="#">공식 채널</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li><img src="resource/ClockDigitsLarge1.png">
+                            <div class="showbox_side">
+                                <ol class="showbox_side_menu">
+                                    <li><a href="#">간단 소개</a></li>
+                                    <li><a href="#">공식 채널</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="menu_extend">
+            <img src="resource/Map_On.png" id="map_icon">
+            <p>메뉴</p>
+        </div>
+    </section>
+
+    <section class="navbar" id="for_PC">
+        <!--for PC-->
         <ul>
-            <li><a href="index.html">홈</a></li>
-            <li><a href="#mods_contents">모드</a>
+            <li><a href="index.html">홈</a>
+                <div class="showbox_nav">
+                    <ol class="showbox_nav_menu">
+                        <li><a href="#">간단 소개</a></li>
+                        <li><a href="#">공식 채널</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="#introduce_mod">모드</a>
                 <div class="showbox_nav">
                     <ol class="showbox_nav_menu">
                         <li><a href="#">주요 모드 목록</a></li>
